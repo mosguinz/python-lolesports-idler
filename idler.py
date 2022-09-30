@@ -23,7 +23,9 @@ def prompt_league():
             pass
 
 
-def prompt_time():
+def prompt_time(league_id: str = None):
+    if league_id:
+        print(f"Check schedule at: https://lolesports.com/schedule?leagues={league_id}")
     return input("Enter local time (HHMM) to open tab: ").strip()
 
 
