@@ -36,6 +36,7 @@ def open_link(url: str):
 
 
 def run_loop(target_url: str, target_time: str):
+    print("\n=========================================================")
     print(f"Waiting till {target_time}. Refreshing every 10 seconds...")
     print(f"Link: {target_url}")
 
